@@ -1,6 +1,6 @@
 package ru.geekbrains.lesson1;
 
-public class Chips extends Product{
+public class Chips extends Product {
 
     private double weight; // вес
     private double calories; // каллорийность
@@ -29,6 +29,7 @@ public class Chips extends Product{
 
     @Override
     public String displayInfo() {
-        return String.format("[Чипсы:] %s - %s - %f - [вес: %f; каллорийность: %d]", brand, name, price, weight, calories);
+        return String.format("[Чипсы:] %s - %s - %f - [вес: %f; каллорийность: %d]", brand, name, price, weight,
+                calories);
     }
 }

@@ -6,44 +6,41 @@ public class Product {
     protected String brand;
     protected double price;
 
-    public double getPrice(){
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(double inputPrice){
+    public void setPrice(double inputPrice) {
         checkPrice(inputPrice);
     }
 
-    public Product(){
+    public Product() {
         this("product", 100);
     }
 
-    public Product(String inputName, double inputPrice){
+    public Product(String inputName, double inputPrice) {
         this("noname", inputName, inputPrice);
     }
 
-    public Product(String brand, String name, double price){
+    public Product(String brand, String name, double price) {
         checkPrice(price);
-        if (name.length() < 5){
+        if (name.length() < 5) {
             this.name = "product";
-        }
-        else {
+        } else {
             this.name = name;
         }
         this.brand = brand;
     }
 
-    private void checkPrice(double inputPrice){
-        if (inputPrice <= 0){
+    private void checkPrice(double inputPrice) {
+        if (inputPrice <= 0) {
             price = 100;
-        }
-        else {
+        } else {
             price = inputPrice;
         }
     }
 
-    public String displayInfo(){
+    public String displayInfo() {
         return String.format("%s - %s- %f", brand, name, price);
     }
-
 }

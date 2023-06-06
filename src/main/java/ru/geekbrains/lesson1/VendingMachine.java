@@ -10,37 +10,36 @@ public class VendingMachine {
         this.products = products;
     }
 
-    public BottleOfWater getBottleOfWater(double volume){
-        for (Product product : products){
-            if (product instanceof BottleOfWater){
-                if (((BottleOfWater)product).getVolume()  == volume){
-                    return (BottleOfWater)product;
+    public BottleOfWater getBottleOfWater(double volume) {
+        for (Product product : products) {
+            if (product instanceof BottleOfWater) {
+                if (((BottleOfWater) product).getVolume() == volume) {
+                    return (BottleOfWater) product;
                 }
             }
         }
         return null;
     }
 
-    public Chocolate getChocolate(double calories){
-        for (Product product : products){
-            if (product instanceof Chocolate){
-                if (((Chocolate)product).getCalories()  == calories){
-                    return (Chocolate)product;
+    public Chocolate getChocolate(double calories) {
+        for (Product product : products) {
+            if (product instanceof Chocolate) {
+                if (((Chocolate) product).getCalories() == calories) {
+                    return (Chocolate) product;
                 }
             }
         }
         return null;
     }
 
-    public Chips getChips(double weight){
-        for (Product product : products){
-            if (product instanceof Chips){
-                if (((Chips)product).getWeight()  == weight){
-                    return (Chips)product;
+    public Chips getChips(double weight) {
+        for (Product product : products) {
+            if (product instanceof Chips) {
+                if (((Chips) product).getWeight() == weight) {
+                    return (Chips) product;
                 }
             }
         }
         return null;
     }
-
 }

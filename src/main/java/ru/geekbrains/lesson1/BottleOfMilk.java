@@ -1,6 +1,6 @@
 package ru.geekbrains.lesson1;
 
-public class BottleOfMilk extends Product{
+public class BottleOfMilk extends Product {
 
     private double volume; // объем
     private double fatСontent; // Содержание жирности
@@ -29,6 +29,7 @@ public class BottleOfMilk extends Product{
 
     @Override
     public String displayInfo() {
-        return String.format("[Бутылка:] %s - %s - %f - [объем: %f; жирность: %d]", brand, name, price, volume, fatСontent);
+        return String.format("[Бутылка:] %s - %s - %f - [объем: %f; жирность: %d]", brand, name, price, volume,
+                fatСontent);
     }
 }
