@@ -3,7 +3,7 @@ package ru.geekbrains.lesson1;
 public class Chocolate extends Product{
 
     private double weight; // вес
-    private int calories; // каллорийность
+    private double calories; // каллорийность
 
     public double getWeight() {
         return weight;
@@ -13,15 +13,15 @@ public class Chocolate extends Product{
         this.weight = weight;
     }
 
-    public int getCalories() {
+    public double getCalories() {
         return calories;
     }
 
-    public void setCalories(int calories) {
+    public void setCalories(double calories) {
         this.calories = calories;
     }
 
-    public Chocolate(String brand, String name, double price, double weight, int calories) {
+    public Chocolate(String brand, String name, double price, double weight, double calories) {
         super(brand, name, price);
         this.weight = weight;
         this.calories = calories;

@@ -14,8 +14,8 @@ public class Program {
 //        System.out.println(bottleOfWater1.displayInfo());
         Product bottleOfMilk1 = new BottleOfMilk("Милкавита", "Ультрапастеризованное", 1.99, 1.0, 2.50);
 //        System.out.println(bottleOfMilk1.displayInfo());
-        Product chips1 = new Chips("Lay's", "Соус манго-чили", 3.79, 125.00, 520);
-        Product chips2 = new Chips("Бульба Chips", "Перец с солью", 2.99, 150.00, 520);
+        Product chips1 = new Chips("Lay's", "Соус манго-чили", 3.79, 125.00, 520.00);
+        Product chips2 = new Chips("Бульба Chips", "Перец с солью", 2.99, 150.00, 520.00);
         Product chocolate1 = new Chocolate("Michelle", "Горький с трюфельной начинкой", 1.74, 90.00, 550);
         Product chocolate2 = new Chocolate("Ritter Sport", "Тёмный с марципановой начинкой", 6.30, 100.00, 493);
 

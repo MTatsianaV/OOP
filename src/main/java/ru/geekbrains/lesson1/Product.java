@@ -31,8 +31,6 @@ public class Product {
             this.name = name;
         }
         this.brand = brand;
-
-
     }
 
     private void checkPrice(double inputPrice){
